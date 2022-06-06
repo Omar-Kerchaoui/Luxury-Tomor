@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Luxury Tomor</title>
+        
+        <link rel="stylesheet" href="monstyle.css">
+    
+    </head>
+    <body>
+        <header>
+            <nav>
+                                  
+    <ul > <li id="nom_boite">Luxury Tomor</li>
+                        <li ><a href="index.html">Home</a></li>
+                        <li><a href="index.html#history">Our History</a></li>
+                        <li><a href="index.html#why-us">Why us ?</a></li>
+                        <li><a href="index.html#our-pack" >Our Packs</a></li> 
+                        <li><a href="index.html#formulaire">Contact us</a></li> 
+                        <li><a href="order.html">Order</a></li>                                 
+                    </ul>                                    
+                
+        </nav>
+    </header>
+    
+    
+<div id="formulaire"> 
+    <h1 class="titre"> ORDER </h1>
+
+    <form  oninput="x.value=parseInt(ni.value)*2">
+                
+        <input name="name" type="text" placeholder="Name" size="20" required="required"> <br/>
+        <input name="email" type="email" placeholder="Mail" required="required"><br/>
+        <input name="subject" type="text" placeholder="Subject" required="required"><br/>
+        <input name="phone" type="phone" placeholder="Phone" required="required"><br/>				    
+        <select name="cars" id="packs">
+            <option value="Discovery Box">Discovery Box</option>
+            <option value="Pleasure Box">Pleasure Box</option>
+            <option value="Guests Tray">Guests Tray</option>
+          </select><br/>
+          <input name="number_items" id="ni" type="text" placeholder="" required="required"><br/>	
+          <p> Total est : <output name="x" for="ni"></output>£</p> <br/>
+         <button type="submit" class="boutton_contact" >Order</button>
+         
+                      
+    </form>
+</div>
+       
+    </body>
+</html>
