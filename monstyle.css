@@ -1,196 +1,287 @@
-body {
-    width: 100% ;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 600px) {
-    .banner {
-        visibility: hidden;
-        display: none ;
-    }
-    nav ul ,#why-us ,#history ,#our-pack ,footer {
-        flex-direction: column;
-    }
+body {
+  color: white;
 }
 @font-face {
- font-family: dancing ;
- src: url(polices/DancingScript-Regular.ttf);
+  font-family: "DancingScript";
+  src: url("polices/DancingScript-Regular.ttf");
 }
 nav {
-        vertical-align: middle;
-    }
-    nav ul {
-        display: flex ;
-        justify-content: center ;
-        list-style-type: none ;
-        align-items:center;
-    }
-    nav li {
-        margin-left: 20px ;
-        text-transform: uppercase;
-        padding: 10px ;
-    }
-    nav li a{
-        color : gray ;
-        text-decoration: none;
-        padding: 8px;
-    }
-    nav li a:hover {  
-        background-color: rgb(34, 34, 34 );
-        color : #d5c3a0 ;
-    }
-    nav #nom_boite {
-        color :   #e5989b ;
-        font-size :20px;  
-    }
-    .banner {
-        background : url("images/12.webp") no-repeat ;
-        height: 620px;
-        
-    }
-    .banner h1 {
-        font-family: dancing ;
-    }
-    #slogant1{
-        position: absolute;
-        top: 300px;
-        left:450px;
-        color: #d5c3a0;
-        padding: 10px;
-        background-color: gray  ;
-        
-    }
-    #slogant2{
-        position: absolute;
-        top: 450px;
-        left: 600px;
-        color: #d5c3a0;
-        padding: 10px;
-        background-color: gray  ; 
-    }
-    .titre {
-        font-family: dancing ;
-        font-size: 60px;
-        color : #d5c3a0 ;
-        text-align: center ;
-    }
-    #history {
-        display: flex;
-        margin: 50px;
-        
-    }
-    #history article img {
-        float: right ;
-    }
-    #history article {
-        color :  rgba(51,51,51,0.75) ;
-        font-size: 20px ;
-    }
-    #history aside {
-        background-color: #d5c3a0;
-        color :  #555b6e ;
-        padding: 60px ;
-        white-space: nowrap; 
-        text-align: center;
-        
-    }
-    #history aside div{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
-    #history aside div a {
-        text-decoration: none; 
-        color: white;
-        border: 2px solid white;
-        padding: 10px;
-    }
-    #why-us {
-        display: flex ;
-        justify-content: center ;
-    }
-    #why-us div {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color :  #555b6e ;
-        margin: 20px;
-    }
-    #why-us div .icones1{
-        height : 370px ;
-        width : 370px ;
-        margin: auto;
-    }
-    #our-pack {
-        display: flex ;
-        justify-content: center ;
-    }
-    #our-pack div {
-        
-        text-align: center;
-        color :  #555b6e ;
-        margin-left: 30px;
-    }
-    #our-pack div .icones2{
-        height : 370px ;
-        width : 370px ;
-        margin: auto;
-        border-radius: 30px;
-    }
-    #formulaire {
-      display: flex;
-      flex-direction: column;
-    
-    }
-    #formulaire form {
-        display: flex;
-        flex-direction: column  ;
-        align-items: center ;
-    }
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 50px 20px 0;
+}
+#nom_boite {
+  color: #e5989b;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
 
-    #formulaire form input ,textarea,select {
-        width: 50% ;
-        margin: 10 px ;
-        margin: auto;
-        border: 0px ;
-        color : #7a7a7a ;
-        font-size:  15px ;
-        background-color:  rgba(0, 0, 0, 0.03) ;
-        padding: 8px ;
-    }
-    
-    #formulaire form button {
-        background-color: rgb(34, 34, 34) ;
-        color : #d5c3a0 ;
-        padding: 14px ;
-        width: 50%;
-    }
-    footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color:  rgb(34, 34, 34) ;
-        height: 400px;
-        color: white ;
-        margin-top: 60px ;
-        text-align: center;
-        padding: 20px;
-    }
-    footer h2 {
-        color : #d5c3a0 ;
-        font-family: dancing ;
-    }
-    footer #footer-left {
-        border: 1px solid gray ;
-        padding: 8px ;
-        width: 60%;
-    }
-    footer #footer-left:hover {
-        border: 1px solid #d5c3a0;
-    }
-    footer #footer-right a{
-        color : white ;
-        text-decoration: none;
-        padding: 8px; 
-        border: 1px solid white ;
-    }
-    
+nav li a {
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 15px;
+}
+nav li a:hover {
+  color: #d5c3a0;
+  background-color: rgb(34, 34, 34);
+}
+.banner {
+  position: relative;
+  background-image: url(images/12.webp);
+  background-position: cover;
+  height: 620px;
+  padding: 200px 0 40px 0;
+  margin: 0 10px;
+}
+#slogant1 {
+  position: absolute;
+  font-family: DancingScript, sans-serif;
+  right: 117px;
+  color: #d5c3a0;
+  background-color: rgb(34, 34, 34);
+  padding: 20px;
+}
+#slogant2 {
+  position: absolute;
+  font-family: DancingScript, sans-serif;
+  top: 367px;
+  right: 198px;
+  color: #d5c3a0;
+  background-color: rgb(34, 34, 34);
+  padding: 20px;
+}
+.titre {
+  font-family: DancingScript, sans-serif;
+  margin-top: 20px;
+  color: #d5c3a0;
+  font-family: DancingScript-Regular, sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+#history {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 7px;
+  margin: 50px;
+}
+article {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgba(51, 51, 51, 0.75);
+}
+#palmier {
+  flex: 1;
+  order: 2;
+}
+#paragraphe {
+  padding: 20px;
+  flex: 2;
+  order: 1;
+}
+#paragraphe h1 {
+  padding-bottom: 15px;
+}
+aside {
+  flex: 1;
+  padding: 20px;
+  background-color: #d5c3a0;
+  color: #555b6e;
+  text-align: center;
+  line-height: 41px;
+}
+.boutton_transparent {
+  text-decoration: none;
+  border: 2px solide white;
+  border-radius: 2px;
+}
+#why-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7px;
+  margin: 15px;
+  color: #555b6e;
+  text-align: center;
+}
+#why-us h1 {
+  padding-bottom: 10px;
+}
+#why-us p {
+  font-size: 19px;
+}
+.icones1,
+.icones2 {
+  width: 320px;
+  height: 320px;
+}
+#service1 {
+  flex: 1;
+}
+#service2 {
+  flex: 1;
+}
+#service3 {
+  flex: 1;
+}
+#our-pack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7px;
+  margin: 60px;
+  color: #555b6e;
+  text-align: center;
+}
+.icones2 {
+  border-radius: 46px;
+}
+.icones2:hover {
+  transform: scale(1.1);
+}
+
+#formulaire form {
+  width: 50%;
+  margin: 10px auto;
+  color: #7a7a7a;
+  font-size: 15px;
+}
+#formulaire input {
+  padding: 20px;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: none;
+}
+#formulaire textarea {
+  padding: 15px;
+  width: 100%;
+  height: 46px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: none;
+}
+#formulaire button {
+  margin: 0 37%;
+  padding: 10px 4px;
+  background-color: rgb(34, 34, 34);
+  color: #d5c3a0;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 60px;
+  color: #555b6e;
+  text-align: center;
+  background-color: rgb(34, 34, 34);
+}
+footer h2 {
+  color: #d5c3a0;
+}
+#footer-left {
+  flex: 2;
+  border: solid 2px#d5c3a0;
+  padding: 20px;
+  line-height: 32px;
+}
+#footer-right {
+  line-height: 32px;
+  padding: 20px;
+}
+#footer-right h3 {
+  margin-bottom: 10px;
+}
+.boutton_transparent {
+  padding: 10px 4px;
+  border: solid 2px #d5c3a0;
+  background-color: rgb(34, 34, 34);
+  color: #d5c3a0;
+}
+
+/* partie order */
+
+#formulaire {
+  display: flex;
+  flex-direction: column;
+}
+#formulaire form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formulaire form input,
+textarea,
+select {
+  width: 50%;
+  margin: 10 px;
+  margin: auto;
+  border: 0px;
+  color: #7a7a7a;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 8px;
+}
+
+#formulaire form button {
+  background-color: rgb(34, 34, 34);
+  color: #d5c3a0;
+  padding: 14px;
+  width: 50%;
+}
+@media screen and (max-width: 1200px) {
+  .big-container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .banner {
+    display: none;
+  }
+  header nav li {
+    display: block;
+  }
+  header nav {
+    display: center;
+    margin: 0 30%;
+  }
+  #history {
+    flex-wrap: wrap;
+  }
+  article {
+    min-width: 400px;
+  }
+  aside {
+    min-width: 200px;
+  }
+  #why-us {
+    flex-wrap: wrap;
+  }
+  #why-us div {
+    min-width: 300px;
+  }
+  #our-pack {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  #pack1,
+  #pack2,
+  #pack3 {
+    min-width: 350px;
+  }
+}

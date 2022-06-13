@@ -7,209 +7,13 @@
         <link rel="stylesheet" href="monstyle.css">
     
     </head>
-    <style>
-        body {
-            width: 100% ;
-
-        }
-        @media screen and (max-width: 600px) {
-            .banner {
-                visibility: hidden;
-                display: none ;
-            }
-            nav ul ,#why-us ,#history ,#our-pack ,footer {
-                flex-direction: column;
-            }
-        }
-        @font-face {
-         font-family: dancing ;
-         src: url(polices/DancingScript-Regular.ttf);
-        }
-        nav {
-                vertical-align: middle;
-            }
-            nav ul {
-                display: flex ;
-                justify-content: center ;
-                list-style-type: none ;
-                align-items:center;
-            }
-            nav li {
-                margin-left: 20px ;
-                text-transform: uppercase;
-                padding: 10px ;
-            }
-            nav li a{
-                color : gray ;
-                text-decoration: none;
-                padding: 8px;
-            }
-            nav li a:hover {  
-                background-color: rgb(34, 34, 34 );
-                color : #d5c3a0 ;
-            }
-            nav #nom_boite {
-                color :   #e5989b ;
-                font-size :20px;  
-            }
-            .banner {
-                background : url("images/12.webp") no-repeat ;
-                height: 620px;
-                
-            }
-            .banner h1 {
-                font-family: dancing ;
-            }
-            #slogant1{
-                position: absolute;
-                top: 300px;
-                left:450px;
-                color: #d5c3a0;
-                padding: 10px;
-                background-color: gray  ;
-                
-            }
-            #slogant2{
-                position: absolute;
-                top: 450px;
-                left: 600px;
-                color: #d5c3a0;
-                padding: 10px;
-                background-color: gray  ; 
-            }
-            .titre {
-                font-family: dancing ;
-                font-size: 60px;
-                color : #d5c3a0 ;
-                text-align: center ;
-            }
-            #history {
-                display: flex;
-                margin: 50px;
-                
-            }
-            #history article img {
-                float: right ;
-            }
-            #history article {
-                color :  rgba(51,51,51,0.75) ;
-                font-size: 20px ;
-            }
-            #history aside {
-                background-color: #d5c3a0;
-                color :  #555b6e ;
-                padding: 60px ;
-                white-space: nowrap; 
-                text-align: center;
-                
-            }
-            #history aside div{
-                display: flex;
-                justify-content: center;
-                margin-top: 50px;
-            }
-            #history aside div a {
-                text-decoration: none; 
-                color: white;
-                border: 2px solid white;
-                padding: 10px;
-            }
-            #why-us {
-                display: flex ;
-                justify-content: center ;
-            }
-            #why-us div {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                color :  #555b6e ;
-                margin: 20px;
-            }
-            #why-us div .icones1{
-                height : 370px ;
-                width : 370px ;
-                margin: auto;
-            }
-            #our-pack {
-                display: flex ;
-                justify-content: center ;
-            }
-            #our-pack div {
-                
-                text-align: center;
-                color :  #555b6e ;
-                margin-left: 30px;
-            }
-            #our-pack div .icones2{
-                height : 370px ;
-                width : 370px ;
-                margin: auto;
-                border-radius: 30px;
-            }
-            #formulaire {
-              display: flex;
-              flex-direction: column;
-            
-            }
-            #formulaire form {
-                display: flex;
-                flex-direction: column  ;
-                align-items: center ;
-            }
-
-            #formulaire form input ,textarea {
-                width: 50% ;
-                margin: 10 px ;
-                margin: auto;
-                border: 0px ;
-                color : #7a7a7a ;
-                font-size:  15px ;
-                background-color:  rgba(0, 0, 0, 0.03) ;
-                padding: 8px ;
-            }
-            
-            #formulaire form button {
-                background-color: rgb(34, 34, 34) ;
-                color : #d5c3a0 ;
-                padding: 14px ;
-            }
-            footer {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                background-color:  rgb(34, 34, 34) ;
-                height: 400px;
-                color: white ;
-                margin-top: 60px ;
-                text-align: center;
-                padding: 20px;
-            }
-            footer h2 {
-                color : #d5c3a0 ;
-                font-family: dancing ;
-            }
-            footer #footer-left {
-                border: 1px solid gray ;
-                padding: 8px ;
-                width: 60%;
-            }
-            footer #footer-left:hover {
-                border: 1px solid #d5c3a0;
-            }
-            footer #footer-right a{
-                color : white ;
-                text-decoration: none;
-                padding: 8px; 
-                border: 1px solid white ;
-            }
-            
-    </style>
     <body>
-<header>
+<div class="big-container">
+    <header>
         <nav>
                               
 <ul > <li id="nom_boite">Luxury Tomor</li>
-                    <li ><a href="#">Home</a></li>
+                    <li ><a href="#banner">Home</a></li>
                     <li><a href="#history">Our History</a></li>
                     <li><a href="#why-us">Why us ?</a></li>
                     <li><a href="#our-pack" >Our Packs</a></li> 
@@ -220,130 +24,131 @@
     </nav>
 </header>
 
+        <div class="banner">
+            <h1 id="slogant1">Until you try, you will not understand anything. </h1>
+                        
+           <h1 id="slogant2">Creative and Luxury Tomor</h1>
+                                    
+                              
+                        
+        </div>
+            <h1 class="titre"> Our History </h1>
+                                              
+    <section id="history" >
 
-<div class="banner">
-    <h1 id="slogant1">Until you try, you will not understand anything. </h1>
-   <h1 id="slogant2">Creative and Luxury Tomor</h1>               
-</div>
+            <article>
+                <img src="images/2.jpg" alt="" id="palmier" width="30%" />
+                <div id="paragraphe">
+                    <h1>Our authentic Premium dates are meticulously garnished with high quality ingredients.</h1>
+                    <p>From classic almonds and dried fruits revisited, to the most exotic and surprising combinations, innovation, the quest for new flavors and trends in fine pastry are our specialty.</p> 
+                    <img src="images/9.png" alt="" id="signature" /> 
+                </div>   
+            </article>
+            <aside>
+                <h2>Ordering times</h2>
+                <h3>Week days  — 24/7 </h3>
+                <h2>You are always welcome</h2>
+                <h4>Pick one of our Packs or customize yours</h4>
+                <h2>+1 (781) 584-9089 </h2>
+                <div><a href="#" class="boutton_transparent">ORDER NOW</a></div>
 
+            </aside>
+        </section>
+        
+        <h1 class="titre"> why us ? </h1>
 
-<h1 class="titre"> Our History </h1>
-                                      
-<section id="history" >
+        <section id="why-us" >
 
-    <article>
-        <img src="images/2.jpg" alt="" id="palmier" width="30%" />
-
-        <h1>Our authentic Premium dates are meticulously garnished with high quality ingredients.</h1>
-        <p>From classic almonds and dried fruits revisited, to the most exotic and surprising combinations, innovation, the quest for new flavors and trends in fine pastry are our specialty.</p> 
-        <img src="images/9.png" alt="" id="signature" />        
-    </article>
-    <aside>
-        <h2>Ordering times</h2>
-        <h3>Week days  — 24/7 </h3>
-        <h2>You are always welcome</h2>
-        <h4>Pick one of our Packs or customize yours</h4>
-        <h2>+1 (781) 584-9089 </h2>
-        <div><a href="#" class="boutton_transparent">ORDER NOW</a></div>
-
-    </aside>
-</section>
-
-
-
-<h1 class="titre"> why us ? </h1>
-
-<section id="why-us" >
-
-    <div id="service1">
+            <div id="service1">
+                            
+                <img src="images/3.png" alt="" class="icones1">
+           
+                <h1>Delicious Tomor </h1>
+                <p>Delicious and pleasant Tomor is waiting for you in our beautiful packages.</p>
+            </div>
                     
-        <img src="images/3.png" alt="" class="icones1">
-   
-        <h1>Delicious Tomor </h1>
-        <p>Delicious and pleasant Tomor is waiting for you in our beautiful packages.</p>
-    </div>
+            <div id="service2">
             
-    <div id="service2">
-    
-<img src="images/4.png" alt="" class="icones1">
-       
-<h1>Pleasant Desserts</h1>
-<p>The most unusual and tasty desserts from our chefs will not leave you without a sweetie</p>
-    </div>
+    <img src="images/4.png" alt="" class="icones1">
+               
+    <h1>Pleasant Desserts</h1>
+    <p>The most unusual and tasty desserts from our chefs will not leave you without a sweetie</p>
+            </div>
 
 
-<div id="service3">
-        <img src="images/4.png" alt="" class="icones1">
-  
-<h1>Customized Gifts</h1>
-<p>Our luxury gift collections are fully customizable with a full range
+    <div id="service3">
+                <img src="images/4.png" alt="" class="icones1">
+          
+    <h1>Customized Gifts</h1>
+    <p>Our luxury gift collections are fully customizable with a full range
 of gastronomic delights.  </P>
 </div>
-
-</section>
-
-
-
-<h1 class="titre"> Our Packs </h1>
-
-<section id="our-pack" >
-   
-   <div id="pack1">
-                   
-       <img src="images/6.jpg" alt="" class="icones2">
-  
-       <h1>Discovery Box </h1>
-       <h4>7 pieces – 14$</h4>
-   </div>
-           
-   <div id="pack2">
-   
-<img src="images/7.jpg" alt="" class="icones2">
-      
-<h1>Pleasure Box</h1>
-<h4>15 pieces – 30$</h4>
-   </div>
-
-<div id="pack3">
-       <img src="images/8.jpg" alt="" class="icones2">
- 
-<h1>Guests Tray</h1>
-<h4>30 pieces – 60$ </h4>
-</div>
-
-</section>
-
-<div id="formulaire"> 
-    <h1 class="titre"> Contact us </h1>
-
-    <form >
-                
-        <input name="name" type="text" placeholder="Name" size="20" required="required"> <br/>
-        <input name="email" type="email" placeholder="Mail" required="required"><br/>
-        <input name="subject" type="text" placeholder="Subject" required="required"><br/>
-        <input name="phone" type="phone" placeholder="Phone" required="required"><br/>				    
-<textarea name="message" rows="6"  placeholder="Message..." required></textarea><br/>
-         <button type="submit" class="boutton_contact" >Send your message</button>
-                      
-    </form>
-</div>
-<footer>
-
-    <div id="footer-left">
-            <h2>How to find us</h2>
-            <h3>Instagram:@luxury_tomor</h3>
-            <h2>Phone: +1 (781) 584-9089</h2>
-            <h3>E-mail:Luxurytomor0212@gmail.com</h3>
-    </div>
-    <div id="footer-right">
-    <h2>Make an order</h2>
-<h3>If you want to make a customized order , <br/>call us.+1 (781) 584-9089 </h3>
-    <a href="#" class="boutton_transparent">ORDER NOW</a>
-
-    </div>
-
     
-</footer>
-      
+        </section>
+
+                <h1 class="titre"> Our Packs </h1>
+
+         <section id="our-pack" >
+            
+            <div id="pack1">
+                            
+                <img src="images/6.jpg" alt="" class="icones2">
+           
+                <h1>Discovery Box </h1>
+                <h4>7 pieces – 14$</h4>
+            </div>
+                    
+            <div id="pack2">
+            
+    <img src="images/7.jpg" alt="" class="icones2">
+               
+    <h1>Pleasure Box</h1>
+    <h4>15 pieces – 30$</h4>
+            </div>
+
+    <div id="pack3">
+                <img src="images/8.jpg" alt="" class="icones2">
+          
+    <h1>Guests Tray</h1>
+    <h4>30 pieces – 60$ </h4>
+</div>
+    
+        </section>
+
+        <div id="formulaire"> 
+                <h1 class="titre"> Contact us </h1>
+
+                <form >
+                            
+				    <input name="name" type="text" placeholder="Name" size="20" required> <br/>
+				    <input name="email" type="email" placeholder="Mail" required><br/>
+				    <input name="subject" type="text" placeholder="Subject" required><br/>
+				    <input name="phone" type="phone" placeholder="Phone" required><br/>				    
+         <textarea name="message" rows="6"  placeholder="Message..." required></textarea><br/>
+			         <button type="submit" class="boutton_contact"  required>Send your message</button>
+                                  
+                </form>
+        </div>
+                    
+        <footer>
+
+                    <div id="footer-left">
+                            <h2>How to find us</h2>
+                            <h3>Instagram:@luxury_tomor</h3>
+                            <h2>Phone: +1 (781) 584-9089</h2>
+                            <h3>E-mail:Luxurytomor0212@gmail.com</h3>
+                    </div>
+                    <div id="footer-right">
+                    <h2>Make an order</h2>
+                <h3>If you want to make a customized order , <br/>call us.+1 (781) 584-9089 </h3>
+                    <a href="#" class="boutton_transparent">ORDER NOW</a>
+
+                    </div>
+
+                    
+        </footer>
+</div>
+
+       
     </body>
 </html>
